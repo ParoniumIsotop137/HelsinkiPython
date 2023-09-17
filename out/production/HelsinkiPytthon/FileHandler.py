@@ -5,7 +5,7 @@ class FileHandler:
 
     def file_reading(filePath, separator):
         first_data = []
-        i = 1;
+        i = 1
         with open(filePath, "r") as file:
             for line in file:
                 data = line.strip().split(separator)
