@@ -19,6 +19,22 @@ class Task:
         else:
             print("Ilyen nevű induló nem volt.")
 
+    def create_statistic(self, second_comp):
+
+        statistics = {}
+
+        for item in second_comp:
+            statistics.update({item.country: 0})
+
+        for item in second_comp:
+            for item2 in statistics:
+                if item.country == item2:
+                    statistics[item2] += 1
+        print("\n7. feladat:\n")
+        for item in statistics:
+            if statistics[item] > 1:
+                print(f"{item}: {statistics[item]} versenyző")
+
 
 def show_all_score(first_comp, i, second_comp):
     total_score = 0

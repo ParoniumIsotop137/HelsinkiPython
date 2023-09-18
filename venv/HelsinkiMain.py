@@ -24,3 +24,5 @@ print(f"\n2. feladat: A rövidprogramban {len(first_comp)} induló volt.")
 task.hungarian_competitor(second_comp)
 name = input("\n5. feladat: Kérem a versenyző nevét: ")
 task.search_for_name(first_comp, name.lower(), second_comp)
+
+task.create_statistic(second_comp)
