@@ -26,3 +26,4 @@ name = input("\n5. feladat: Kérem a versenyző nevét: ")
 task.search_for_name(first_comp, name.lower(), second_comp)
 
 task.create_statistic(second_comp)
+task.create_result_file(first_comp, second_comp)
